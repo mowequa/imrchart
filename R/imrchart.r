@@ -335,7 +335,7 @@ imrchart<-function(x,xname="Response",xLabName="Index",bMed=F,bSD=F,bTests=rep(T
 
   #INDIVIDUALS PLOT
   sframe$ydata<-sframe[[1]]
-  xplot<-ggplot(sframe,aes(x=plotx,y=ydata),na.rm=TRUE)+ggtitle(chartTitle)+scale_x_continuous(name=xLabName)+scale_y_continuous(name=names(sframe)[1],limits = c(0,NA))
+  xplot<-ggplot(sframe,aes(x=plotx,y=ydata),na.rm=TRUE)+ggtitle(chartTitle)+scale_x_continuous(name=xLabName)+scale_y_continuous(name=names(sframe)[1])
   xline<-geom_line(aes(x=plotx,y=ydata,colour=paste0("Data (",xname,")")),na.rm=TRUE)
   aveline<-geom_line(aes(y=xave,colour="Average"),na.rm=TRUE)
   xuclline<-geom_line(aes(y=UCLx,colour="Control Limit"),na.rm=TRUE)
