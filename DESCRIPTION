@@ -1,7 +1,7 @@
 Package: imrchart
 Title: Individuals and Moving Range Charts
 Date: 2016-05-27
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Author: person("Maurice", "Klaus", email = "mbklaus@gmail.com", role = c("aut",
     "cre"))
 Description: This packages creates an individuals and moving range chart from
@@ -14,4 +14,5 @@ Depends:
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/mowequa/imrchart
 RoxygenNote: 5.0.1.9000
