@@ -4,13 +4,13 @@
 \alias{imrchart}
 \title{A function to create individuals and moving range charts}
 \usage{
-imrchart(x, xname, xLabName, bMed = F, bSD = F, bTests = rep(T, 8),
-  pTs = c(2, 4, 6, 9, 8, 14, 15))
+imrchart(x, xname = "Response", xLabName = "Index", bMed = F, bSD = F,
+  bTests = rep(T, 8), pTs = c(2, 4, 6, 9, 8, 14, 15))
 }
 \arguments{
 \item{x}{a numeric data vector, no default}
 
-\item{xname}{a character string for the name of the data vector, no default}
+\item{xname}{a character string for the name of the data vector, defaults to 'Response'}
 
 \item{xLabName}{a character string for the name of the x-axis, defaults to 'Index'}
 
@@ -32,3 +32,4 @@ imrchart()
 \keyword{control}
 \keyword{imr,}
 \keyword{xmr}
+
