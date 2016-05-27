@@ -1,0 +1,17 @@
+Package: imrchart
+Title: Individuals and Moving Range Charts
+Date: 2016-05-27
+Version: 0.0.0.9000
+Author: person("Maurice", "Klaus", email = "mbklaus@gmail.com", role = c("aut",
+    "cre"))
+Description: This packages creates an individuals and moving range chart from
+    a single, numeric data vector. The charts are based on the inviduals and moving
+    range charts described in 'Understanding Statistical Process Control' by Donald
+    Wheeler and David Chambers. The charts accommodate the 8 Western Electric
+    control chart tests.
+Depends:
+    R (>= 3.3.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1.9000
