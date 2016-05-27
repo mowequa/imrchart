@@ -26,8 +26,10 @@ imrchart(x, xname = "Response", xLabName = "Index", bMed = F, bSD = F,
 This function allows you to create an individuals and moving range chart from a single, numeric data vector
 }
 \examples{
+**## Not run:**
 # Plot the first 30 days of the FTSE index from the EuStockMarkets example data
 imrchart(EuStockMarkets[1:30,2],"FTSE","Day")
+## End(**Not run**)
 }
 \keyword{chart,}
 \keyword{control}
