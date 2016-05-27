@@ -13,7 +13,8 @@ imrchart<-function(x,xname="Response",xLabName="Index",bMed=F,bSD=F,bTests=rep(T
   #' @keywords control chart, imr, xmr
   #' @export
   #' @examples
-  #' imrchart()
+  #' # Plot the first 30 days of the FTSE index from the EuStockMarkets example data
+  #' imrchart(EuStockMarkets[1:30,2],"FTSE","Day")
 
 
   library(calibrate)
