@@ -4,15 +4,15 @@
 \alias{imrchart}
 \title{A function to create individuals and moving range charts}
 \usage{
-imrchart(x, xname = "Response", xLabName = "Index", bMed = F, bSD = F,
+imrchart(data, xcol = NULL, ycol = NULL, bMed = F, bSD = F,
   bTests = rep(T, 8), pTs = c(2, 4, 6, 9, 8, 14, 15))
 }
 \arguments{
-\item{x}{a numeric data vector, no default}
+\item{data}{data frame or time series containing the data to be plotted}
 
-\item{xname}{a character string for the name of the data vector, defaults to 'Response'}
+\item{xcol}{sequence data, default is a sequence called "Index"}
 
-\item{xLabName}{a character string for the name of the x-axis, defaults to 'Index'}
+\item{ycol}{process output data}
 
 \item{bMed}{a logical statement, T = control limits based on median moving range, F = control limits based on mean moving range, defaults to FALSE}
 
@@ -26,10 +26,10 @@ imrchart(x, xname = "Response", xLabName = "Index", bMed = F, bSD = F,
 This function allows you to create an individuals and moving range chart from a single, numeric data vector
 }
 \examples{
-imrchart(EuStockMarkets[1:30,2],"FTSE","Day")
+imrchart(discoveries,bTests = c(T,T,rep(F,6)))
 }
 \keyword{chart,}
 \keyword{control}
 \keyword{imr,}
-\keyword{xmr}
+\keyword{ymr}
 
