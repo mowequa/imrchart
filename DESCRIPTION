@@ -11,6 +11,16 @@ Description: This packages creates an individuals and moving range chart from
     control chart tests.
 Depends:
     R (>= 3.3.0)
+Imports:
+	grid,
+	MASS,
+	calibrate,
+	ggplot2,
+	reshape2,
+	scales,
+	timeDate,
+	timeSeries,
+	lubridate
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
